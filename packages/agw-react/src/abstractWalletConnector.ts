@@ -59,6 +59,8 @@ function abstractWalletConnector(
       iconUrl: ICON_URL,
       id: AGW_APP_ID,
       name: 'Abstract',
+      // @ts-expect-error - internal value
+      apiUrl: 'https://nick3000.privy.dev',
     })(params);
 
     const getAbstractProvider = async (
